@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Nunito+Sans:wght@200;400;700&display=swap" rel="stylesheet"> 
+    <link
+    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Document</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="links">
+          <li class="link__item">
+            <a class="nav__link" href="#section--1">About Us</a>
+          </li>
+          <li class="link__item">
+            <a class="nav__link" href="#section--2">Careers</a>
+          </li>
+          <li class="link__item">
+            <a class="nav__link" href="#section--3">Contact Us</a>
+          </li>
+          <li class="link__item">
+            <a class="nav__link btn__show__modal" href="#">Sign Up</a>
+          </li>
+          <li class="link__item">
+            <a class="nav__link btn__LogIn-modal" href="#">Log In</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="showcase__area">
+        <div class="left">
+          <div class="header__title">
+            <h1>We help you <br>grow and do more</h1>
+            <p>
+              We bring together everything that's required for E-commerce and
+              Consumer brands to ship goods to consumers and retailers across
+              Africa. It's our mission to make trade easier.
+            </p>
+            <div>
+              <a href="#homepagevideo" class="video_link vid--link">WATCH VIDEO</a></div>
+          </div>
+          </div>
+          <div class="right">
+            <img
+              src="images/delivery_modes_concept.jpg"
+              class="header__img1"
+              alt="delivery modes"
+            />
+            <img
+              src="images/delivery_truck.jpg"
+              class="header__img2"
+              alt="delivery truck"
+            />
+            <img
+              src="images/Loading workman carrying boxes.jpg"
+              class="header__img3"
+              alt="Workmen carrying boxes"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="section" id="section--1">
+      <div class="section__title">
+       <h1>Here's how we help you do more</h1>
+
+      </div>
+    <div class="section__content">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ppCcuedS5Ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Hb4Dwp0yuxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yp2IzmwugNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yp2IzmwugNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    </div>
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a href="#" class="footer__link">About Us</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Privacy</a>
+        </li>
+      </ul>
+      <div class="social_media">
+     
+      </div>
+    </footer>
+
+    <!-- Sign up Form -->
+    <div class="modal hidden">
+      <button class="btn__close__modal">&times;</button>
+      <form action="">
+        <div class="modal--form__container">
+          <div class="heading">
+            <h1>Sign Up</h1>
+            <p>Create a new account</p>
+          </div>
+          <div class="form__content">
+            <label for="first__name">First Name</label>
+            <input type="text" required />
+            <label for="last__name">Last Name</label>
+            <input type="text" />
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter your email" required />
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter password" required />
+            <label for="repeatPassword">Repeat Password</label>
+            <input type="password" placeholder="Repeat  password" require />
+            <p>
+              By creating an account you agree to our
+              <a href="#">Terms,conditions & Privacy</a>
+            </p>
+          </div>
+
+          <div>
+            <button class="btn__signUp">Sign Up</button>
+            <p>Already have an account? <a href="#">Log In </a></p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <!-- Log in form -->
+    <div class="logIn__Modal hidden">
+      <button class="close__logIn-modal">&times;</button>
+      <form action="">
+      <div class="logIn__container">
+        <div class="heading">
+          <h1>Log In</h1>
+          <h4>Welcome back</h4>
+        </div>
+        <div class="logIn__form">
+          <label for="email">Email</label>
+          <input type="text" placeholder="Enter your email " required />
+          <label for="password">Password</label>
+          <input type="password" placeholder="password" required />
+        </div>
+        <div class="btn__logIn">LogIn</div>
+      </div>
+      </form>
+    </div>
+    <!-- <div class="overlay hidden"></div> -->
+    <div class="login__overlay hidden"></div>
+  </body>
+</html>
