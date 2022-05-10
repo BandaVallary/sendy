@@ -310,10 +310,10 @@ body {
   visibility: hidden;
   opacity: 0;
 }
-.map {
+/* .map {
   height: 400px;
   width: 100%;
-}
+} */
 
 @media (max-width: 767px) {
   .form__container {
